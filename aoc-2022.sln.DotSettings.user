@@ -2,5 +2,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c9c31bc_002D6bcc_002D496c_002D8f1e_002Dc2b0383fa9c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Part 1: Start the journey, let's take inventory via inventory-test.txt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::45850D12-BCA0-480E-A94D-3EAF796B00C7::net6.0::CalorieCountingTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2A2FD204-C129-4CA0-9F9B-4E7D32AE39F0::net6.0::RockPaperScissorsTests.Part 1: Start lets calculate RPS score using strategy-test.txt&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2A2FD204-C129-4CA0-9F9B-4E7D32AE39F0::net6.0::RockPaperScissorsTests.Part 2: Start lets calculate RPS score using strategy.txt&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2A2FD204-C129-4CA0-9F9B-4E7D32AE39F0::net6.0::RockPaperScissorsTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
