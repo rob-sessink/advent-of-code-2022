@@ -25,26 +25,29 @@ type Hand =
 
 type Outcome =
     | Draw
-    | Loose
+    | Loss
     | Win
 
     static member As outcome =
         match outcome with
-        | "X" -> Loose
+        | "X" -> Loss
         | "Y" -> Draw
         | "Z" -> Win
         | _ -> invalidArg outcome "Unknown outcome"
 
 type Score =
-    | Both of Hand * Hand
+    | Tie of Hand * Hand
     | First of Hand * Hand
     | Second of Hand * Hand
 
+    member private me.TieScore = 3
+    member private me.WinScore = 6
+
     member me.Value =
         match me with
-        | Both (f, s) -> (f.Value + 3, s.Value + 3)
-        | First (f, s) -> (f.Value + 6, s.Value)
-        | Second (f, s) -> (f.Value, s.Value + 6)
+        | Tie (f, s) -> (f.Value + me.TieScore, s.Value + me.TieScore)
+        | First (f, s) -> (f.Value + me.WinScore, s.Value)
+        | Second (f, s) -> (f.Value, s.Value + me.WinScore)
 
     member me.Snd = snd me.Value
 
@@ -54,21 +57,21 @@ type Round =
 
     member me.Play =
         match me with
-        | ByHand (Rock, Rock) -> Both(Rock, Rock)
+        | ByHand (Rock, Rock) -> Tie(Rock, Rock)
         | ByHand (Rock, Paper) -> Second(Rock, Paper)
         | ByHand (Rock, Scissors) -> First(Rock, Scissors)
         | ByHand (Paper, Rock) -> First(Paper, Rock)
-        | ByHand (Paper, Paper) -> Both(Paper, Paper)
+        | ByHand (Paper, Paper) -> Tie(Paper, Paper)
         | ByHand (Paper, Scissors) -> Second(Paper, Scissors)
         | ByHand (Scissors, Rock) -> Second(Scissors, Rock)
         | ByHand (Scissors, Paper) -> First(Scissors, Paper)
-        | ByHand (Scissors, Scissors) -> Both(Scissors, Scissors)
-        | ByOutcome (Draw, Rock) -> Both(Rock, Rock)
-        | ByOutcome (Draw, Paper) -> Both(Paper, Paper)
-        | ByOutcome (Draw, Scissors) -> Both(Scissors, Scissors)
-        | ByOutcome (Loose, Rock) -> First(Rock, Scissors)
-        | ByOutcome (Loose, Paper) -> First(Paper, Rock)
-        | ByOutcome (Loose, Scissors) -> First(Scissors, Paper)
+        | ByHand (Scissors, Scissors) -> Tie(Scissors, Scissors)
+        | ByOutcome (Draw, Rock) -> Tie(Rock, Rock)
+        | ByOutcome (Draw, Paper) -> Tie(Paper, Paper)
+        | ByOutcome (Draw, Scissors) -> Tie(Scissors, Scissors)
+        | ByOutcome (Loss, Rock) -> First(Rock, Scissors)
+        | ByOutcome (Loss, Paper) -> First(Paper, Rock)
+        | ByOutcome (Loss, Scissors) -> First(Scissors, Paper)
         | ByOutcome (Win, Rock) -> Second(Rock, Paper)
         | ByOutcome (Win, Paper) -> Second(Paper, Scissors)
         | ByOutcome (Win, Scissors) -> Second(Scissors, Rock)
