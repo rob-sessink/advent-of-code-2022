@@ -82,7 +82,7 @@ type Variant =
 
 let toList file = File.ReadLines(file) |> Seq.toList
 
-let playByType variant (round: string) =
+let playBy variant (round: string) =
     match round.Split(" ") with
     | [| fh; sh |] ->
         match variant with
@@ -92,6 +92,6 @@ let playByType variant (round: string) =
 
 let calculateScore variant strategy =
     toList strategy
-    |> List.map (playByType variant)
+    |> List.map (playBy variant)
     |> List.map (fun r -> r.Play)
     |> List.sumBy (fun s -> s.Snd)

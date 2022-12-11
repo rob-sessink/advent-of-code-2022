@@ -3,7 +3,7 @@ module Main
 open RockPaperScissors
 
 let usage () =
-    printfn $"countcalories <strategy>"
+    printfn $"rockpaperscissors <strategy>"
     -1
 
 [<EntryPoint>]
