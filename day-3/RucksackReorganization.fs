@@ -10,9 +10,8 @@ let priority c =
 
 let toList file = File.ReadLines(file) |> Seq.toList
 
-let toGroup content = content |> Seq.toList
-
-let toCompartments i content = content |> toGroup |> List.splitInto i
+let toCompartments i content =
+    content |> Seq.toList |> List.splitInto i
 
 let matchingItems (c1: char list) (c2: char list) =
     List.allPairs c1 c2
@@ -27,7 +26,7 @@ let matching (items: char list list) = List.reduce matchingItems items
 let reorganizeGroups contentlist =
     contentlist
     |> toList
-    |> List.map toGroup
+    |> List.map Seq.toList
     |> List.chunkBySize 3
     |> List.map (fun l3 -> l3 |> matching |> List.sumBy priority)
     |> List.sum
