@@ -11,12 +11,12 @@ type Section =
         | [| is; ie |] -> { Start = int is; End = int ie }
         | _ -> invalidArg s "invalid section range"
 
-    static member containedIn me other =
+    static member ContainedIn me other =
         match me, other with
         | me, other when me.Start >= other.Start && me.End <= other.End -> Some me
         | _ -> None
 
-    static member overLapping me other =
+    static member OverLapping me other =
         match me, other with
         | me, other when me.Start <= other.End && me.End >= other.Start -> Some me
         | _ -> None
