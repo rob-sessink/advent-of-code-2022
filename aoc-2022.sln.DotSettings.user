@@ -1,5 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c9c31bc_002D6bcc_002D496c_002D8f1e_002Dc2b0383fa9c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Part 1: Start the journey, let's take inventory via inventory-test.txt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2116af73_002D4920_002D4f63_002D8f9f_002D2afc161c05eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Part 1: `using configuration-test.txt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::FF40ED7C-A40D-4974-8CC2-58191E6E5992::net6.0::SupplyStacksTests.Part 1: `using configuration-test.txt&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c9c31bc_002D6bcc_002D496c_002D8f1e_002Dc2b0383fa9c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Part 1: Start the journey, let's take inventory via inventory-test.txt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::45850D12-BCA0-480E-A94D-3EAF796B00C7::net6.0::CalorieCountingTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::2A2FD204-C129-4CA0-9F9B-4E7D32AE39F0::net6.0::RockPaperScissorsTests.Part 1: Start lets calculate RPS score using strategy-test.txt&lt;/TestId&gt;
@@ -8,5 +13,16 @@
     &lt;TestId&gt;xUnit::37438A5D-559D-44CC-AD0D-FF63F9DE341D::net6.0::RucksackReorganizationTests.Part 1: Reorganizae rucksuck using content-test.txt&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::37438A5D-559D-44CC-AD0D-FF63F9DE341D::net6.0::RucksackReorganizationTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::31D21A84-6131-4C88-8D5C-A768705DBD71::net6.0::CampCleanupTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::FF40ED7C-A40D-4974-8CC2-58191E6E5992::net6.0::SupplyStacksTests.Part 1: `using configuration-test.txt&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd60443b_002D5079_002D4df1_002Db31a_002D27e8ec1b36d8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Part 1: `using configuration-test.txt #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::FF40ED7C-A40D-4974-8CC2-58191E6E5992::net6.0::SupplyStacksTests.Part 1: `using configuration-test.txt&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e5ff8109_002D9fa3_002D4c01_002D9102_002D16a93aabc9c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Part 1: `using configuration-test.txt #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::FF40ED7C-A40D-4974-8CC2-58191E6E5992::net6.0::SupplyStacksTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
