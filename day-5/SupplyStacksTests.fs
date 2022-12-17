@@ -18,5 +18,5 @@ let ``Part 2: `Rearranging supply stacks with CrateMover_9001 using configuratio
     rearrange "configuration-test.txt" CraneType.CrateMover_9001 |> should equal "MCD"
 
 [<Fact>]
-let ``Part 1: `Rearranging supply stacks with CrateMover_9001 using configuration.txt`` () =
+let ``Part 2: `Rearranging supply stacks with CrateMover_9001 using configuration.txt`` () =
     rearrange "configuration.txt" CraneType.CrateMover_9001 |> should equal "BRQWDBBJM"
