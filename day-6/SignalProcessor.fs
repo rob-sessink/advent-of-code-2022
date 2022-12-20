@@ -4,7 +4,7 @@ open System.IO
 
 let uniques arr = arr |> Array.distinct |> Array.length
 
-let startOfPacketMarker window datastream =
+let findMarker window datastream =
     datastream
     |> Seq.windowed window
     |> Seq.indexed
@@ -18,6 +18,6 @@ let toList file = File.ReadAllLines file |> Seq.toList
 let processSignal window signals =
     signals
     |> toList
-    |> List.map (startOfPacketMarker window)
+    |> List.map (findMarker window)
     |> List.head
     |> fst
