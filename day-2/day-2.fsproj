@@ -2,10 +2,9 @@
 
     <PropertyGroup>
         <AssemblyName>rockpaperscissors</AssemblyName>
-        <OutputType>Exe</OutputType>
+        <OutputType>Library</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <GenerateProgramFile>false</GenerateProgramFile>
-        <WarnOn>3390;$(WarnOn)</WarnOn>
     </PropertyGroup>
 
     <ItemGroup>

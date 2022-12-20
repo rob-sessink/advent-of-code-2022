@@ -1,10 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>rucksackreorganization</AssemblyName>
         <OutputType>Library</OutputType>
         <TargetFramework>net6.0</TargetFramework>
-        <GenerateProgramFile>true</GenerateProgramFile>
-        <WarnOn>3390;$(WarnOn)</WarnOn>
     </PropertyGroup>
 
     <ItemGroup>

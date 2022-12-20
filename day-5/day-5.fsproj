@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>supplystacks</AssemblyName>
         <OutputType>Library</OutputType>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>supplystacks</RootNamespace>
+        <RootNamespaces>supplystacks</RootNamespaces>
     </PropertyGroup>
 
     <ItemGroup>
